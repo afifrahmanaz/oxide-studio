@@ -83,111 +83,113 @@ export default function Karya() {
             <section className="pb-32 bg-white relative z-10">
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="group relative aspect-[4/3] w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
-                            <img alt="Corporate Architecture" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[0.5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWD2mi3g-0HA3Xubcn2VtdemuX7F5mpPgG7jaeIe6sgnuTnPFtt-e5yf7NbdxkhGE8NHaZ48UZa5W9Wu4nfm_kK6rArE1w1MccYzhBpe6tpScl1KwCL2buVlvya2rChA0I2O0jCi8XjuBGvpguuhb3Cx6ObtgyHv5THl0fZUi2WX-_rg1FctyfaOix5GcUDFOdx7QT_3NdzCaQX9tcT2zLIBC1iBPyxXNM-MTbIOFKuP5zEfoKKUi3PY7mmYPfH9qN2_Wi-lOxFD0" />
+                        {/* OneHundred Honey */}
+                        <a href="https://www.onehundredhoney.com" target="_blank" rel="noopener noreferrer" className="group relative aspect-video w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+                            <Image src="/website/ONEHUNDRED.png" alt="OneHundred Honey" fill className="object-cover object-top transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-oxide-deep/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Website Profesional</span>
-                                    <h3 className="font-serif text-3xl text-white italic mb-2">Arkana Finance</h3>
-                                    <p className="text-xs text-blue-100 font-light leading-relaxed max-w-xs">
-                                        Platform manajemen aset korporat dengan visualisasi data real-time dan keamanan tingkat bank.
+                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">E-Commerce</span>
+                                    <h3 className="font-serif text-3xl text-white italic mb-2">OneHundred Honey</h3>
+                                    <p className="text-xs text-blue-100 font-light leading-relaxed">
+                                        Platform penjualan madu premium dengan desain modern dan elegan.
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="group relative aspect-[4/3] w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
-                            <img alt="Portrait" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[0.5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp-yNb6N8lAO4HNhL7hFjTIgOMrE8bWN0nTeqvzqYH9EgXaNmOZxCrQZntGbCgIbWK8gIfhQMJRDXM8gAeHUp0BurQ6iSz0AKZHyEA5JDgECZ5KZNDrjCtSgxdn1RkMAKThRy_5US3vofYG1v8HTvPQNRCYvLdaoJzzj7GWdgFYfnf6NcHe8moXl5eFcXV_JQq5j8PIkSfwPdXmVZIZy0K0GfeCzI3x_nu0fLqM_hDTKOhNE6KDvdIC91pt1P5wBMaOFwH3CYJwS4" />
+                        </a>
+
+                        {/* Salad Sayur Bell */}
+                        <a href="https://salad-sayur-new.vercel.app/" target="_blank" rel="noopener noreferrer" className="group relative aspect-video w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+                            <Image src="/website/SALAD SAYUR BELL.png" alt="Salad Sayur Bell" fill className="object-cover object-top transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-oxide-deep/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Website Biografi</span>
-                                    <h3 className="font-serif text-3xl text-white italic mb-2">Dr. Suryo Wibowo</h3>
-                                    <p className="text-xs text-blue-100 font-light leading-relaxed max-w-xs">
-                                        Personal branding digital untuk pakar neurologi terkemuka dengan pendekatan editorial yang elegan.
+                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">F&B Business</span>
+                                    <h3 className="font-serif text-3xl text-white italic mb-2">Salad Sayur Bell</h3>
+                                    <p className="text-xs text-blue-100 font-light leading-relaxed">
+                                        Website bisnis salad dan jus dengan desain fresh dan interaktif.
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="group relative aspect-[4/3] w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
-                            <img alt="Retro Gaming" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[0.5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASOZpeVBX6yaW5pTWw_qJMyIjBzlzmrWqHDO1RnSfXutb47JoMI4QlZ2qjJ6YAdI2t__1Kun1VQ4IH4t3RKk7JxI1vJNArpDFhMV75H0WGYuKnuZp4_-gC-ry50RCAUEo5BAKycM7loktJXNKR6j2BPFKCDyX0udu4T0kU_7CTnOWNin9_fs5aAFmdMiydYs7L6dJ8M-IP67KjJPTLwe0GelfIvpy9SZzGC8CGD7U1AFtGIen-RUb7aEO5GbiaNJqWhxAMDg61oU8" />
+                        </a>
+
+                        {/* Taman Lansia */}
+                        <a href="https://taman-ramah-lansia.vercel.app/" target="_blank" rel="noopener noreferrer" className="group relative aspect-video w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+                            <Image src="/website/TAMAN LANSIA.png" alt="Taman Ramah Lansia" fill className="object-cover object-top transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-oxide-deep/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Website Fun</span>
-                                    <h3 className="font-serif text-3xl text-white italic mb-2">Pixel Arcade</h3>
-                                    <p className="text-xs text-blue-100 font-light leading-relaxed max-w-xs">
-                                        Portal komunitas retro gaming dengan interaksi 8-bit yang imersif dan penuh warna.
+                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Social Project</span>
+                                    <h3 className="font-serif text-3xl text-white italic mb-2">Taman Ramah Lansia</h3>
+                                    <p className="text-xs text-blue-100 font-light leading-relaxed">
+                                        Website program sosial dengan desain yang hangat dan accessible.
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="group relative aspect-[4/3] md:col-span-2 md:aspect-[21/9] w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
-                            <img alt="AI Interface" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[0.5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP9KQaUxhKISxHLURRuPp2dwbcga-PyN-PEHbVZ_oU6aVJMs0x6ih6MYPzIIDF9v3eTxWZmgP8t9zeMTsjEkbQuI3UsEZE6s5VYUywycxq3wRcvl4ptLPEWtg8wr-ap6x4uTVLcqzhLwxeWbdUcjNHWl1AP_aRwM8K1Am2HhXDoiOugOJkGtaz8s-515RMPpAfPdniM2MGqtKrWdhx8oLrIEYMbysVtr-S1gSS4n1mbMyWPP0A9AdLYCY9c9ybX5ZqT4g7iUjNIW0" />
-                            <div className="absolute inset-0 bg-oxide-deep/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 md:p-12">
-                                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Chatbot AI</span>
-                                    <h3 className="font-serif text-4xl text-white italic mb-2">Sentra Pelayanan Cerdas</h3>
-                                    <p className="text-sm text-blue-100 font-light leading-relaxed max-w-lg">
-                                        Asisten virtual berbasis NLP untuk layanan publik pemerintah daerah. Mengurangi waktu tunggu antrean hingga 70% dengan antarmuka percakapan yang natural.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="group relative aspect-[4/3] w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
-                            <img alt="Dashboard UI" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[0.5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7P1cPX0oR0uurJ62aSEHtZmqDcZ2bxB488_tmAiJqwr-yUfC77tYwdsBmqoIwnDZ4Qbft-n5wSs6sEvHb-FBG8XILv0kcUJvipRPQkTln6rHTkGzinvhrPFL1WRE9hGZX_HHXRrlRXKmuRrMU1J7WUbYulhbHuRm_-ge_YhjbuRhfXxwIxilliyx7oOltEE0bKbOg3sObXdQ1JRifDqshWRCv8o4XNKDLdZaohYMCt2A5kBMGJsJNoy8Uo-JXr1dD2-oa1kYJuuQ" />
+                        </a>
+
+                        {/* Anjayo Residence */}
+                        <a href="https://anjayoresidence.vercel.app/" target="_blank" rel="noopener noreferrer" className="group relative aspect-video w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+                            <Image src="/website/anjayo.jpg" alt="Anjayo Residence" fill className="object-cover object-top transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-oxide-deep/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Produk Digital</span>
-                                    <h3 className="font-serif text-3xl text-white italic mb-2">Oxide UI Kit</h3>
-                                    <p className="text-xs text-blue-100 font-light leading-relaxed max-w-xs">
-                                        Sistem desain komprehensif untuk pengembang React, mempercepat alur kerja prototyping.
+                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Real Estate</span>
+                                    <h3 className="font-serif text-3xl text-white italic mb-2">Anjayo Residence</h3>
+                                    <p className="text-xs text-blue-100 font-light leading-relaxed">
+                                        Website properti mewah untuk perumahan eksklusif dengan desain elegant.
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="group relative aspect-[4/3] w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
-                            <img alt="Modern Office" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[0.5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0kMjUWjhg0MGACwfZoROo_6zuG-Q9SiutkFGRorCn5j0XC64b6dvZk9ihMUpoj3iSQWf9mXJQVhUGcOzXX3znHTkMWNYqFB4dszTNm5Ya3bKh9A3rR4pulpsnSCEhyobOGlIunQJ_KJqLqhOmqNjbjM9rOju6R1RU1PVe8Q7tnfrP2Z1Vow6mjXOuc_9irAilxLx3V4kYRIncZkBhHqegK3KdISfeN39RDplXp7inazTSnhAnVYaz-IFXNBxljl5l_XUacMvfC9U" />
+                        </a>
+
+                        {/* Portfolio Putri */}
+                        <a href="https://putrimaharani.vercel.app/" target="_blank" rel="noopener noreferrer" className="group relative aspect-video w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+                            <Image src="/website/Portfolio.jpg" alt="Portfolio Putri Maharani" fill className="object-cover object-top transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-oxide-deep/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Website Profesional</span>
-                                    <h3 className="font-serif text-3xl text-white italic mb-2">Urban Living</h3>
-                                    <p className="text-xs text-blue-100 font-light leading-relaxed max-w-xs">
-                                        Situs properti mewah dengan tur virtual 360 derajat dan integrasi booking viewing.
+                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Portfolio</span>
+                                    <h3 className="font-serif text-3xl text-white italic mb-2">Putri Maharani</h3>
+                                    <p className="text-xs text-blue-100 font-light leading-relaxed">
+                                        Portfolio personal UI/UX Designer dengan desain clean dan profesional.
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="group relative aspect-[4/3] w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
-                            <img alt="Concert" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[0.5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD5UFNMlOuIt_gJp29wV0xlGeVr1ejK3aixRiSU28TfURvokIXok4JWwaudxp6S7BpugU_1RvedIiS77hsrrAnyVk4cxhZ_zsJpr_qjQEzfCQjcoF8SrXxrmwspKU49DCB8o__KhSqy5OLr9yavk0uQ-1zDXXEOKCABSmx9zDeJF4uvigMLWlwC9Ugi7UUako80LDgtg-xVbrq_mwsTP755dlaU9QUhl8sGbQzwO9_QJtkYotUOodJ7PhIBp4-jiZIdqKp8qviFOI" />
+                        </a>
+
+                        {/* SMP Negeri 2 Pangkalpinang */}
+                        <a href="https://smpn2-pkp.vercel.app/" target="_blank" rel="noopener noreferrer" className="group relative aspect-video w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+                            <Image src="/website/image.png" alt="SMP Negeri 2 Pangkalpinang" fill className="object-cover object-top transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-oxide-deep/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Website Fun</span>
-                                    <h3 className="font-serif text-3xl text-white italic mb-2">SoundFest JKT</h3>
-                                    <p className="text-xs text-blue-100 font-light leading-relaxed max-w-xs">
-                                        Landing page festival musik interaktif dengan animasi scroll-driven yang dinamis.
+                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">School Profile</span>
+                                    <h3 className="font-serif text-3xl text-white italic mb-2">SMP Negeri 2 Pangkalpinang</h3>
+                                    <p className="text-xs text-blue-100 font-light leading-relaxed">
+                                        Website resmi sekolah dengan fitur interaktif dan informasi lengkap untuk siswa dan orang tua.
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="group relative aspect-[4/3] w-full overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
-                            <img alt="Artist" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-[0.5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJmJI-VyI9zUNaCg0p8Z8kgdjxXy1CegD-84goPIyB_abh5xWZBL25OWdVKl0eGnZKUDxcP5jTPL2eQWRspp7IujgdekDklIp4G2zF9kHCbQA7y4TglxyAoG0CaTGd6yN7vjCi3eKThMD3dbg2EFksngwgIlBTHKXi-8mJ6DrqVkXOXyDDejDGeA9vYQywjW1GGTrS4cpBC9rHlvrxfucyLE9cdrKGHallg_yE7JOLFEZ9c5BHOY0ln8y0WNvJUruVOTz5op0CMWk" />
-                            <div className="absolute inset-0 bg-oxide-deep/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
-                                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <span className="inline-block px-2 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest bg-white/10 text-white rounded-sm backdrop-blur-md">Website Biografi</span>
-                                    <h3 className="font-serif text-3xl text-white italic mb-2">Mahendra Art</h3>
-                                    <p className="text-xs text-blue-100 font-light leading-relaxed max-w-xs">
-                                        Galeri daring untuk seniman kontemporer, fokus pada detail tekstur karya.
-                                    </p>
-                                </div>
+                        </a>
+
+                        <div className="group relative aspect-video w-full overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 cursor-default shadow-sm transition-all duration-500 flex items-center justify-center">
+                            <div className="text-center p-8">
+                                <span className="material-symbols-outlined text-5xl text-slate-400 mb-4 block">schedule</span>
+                                <h3 className="font-serif text-xl text-slate-600 italic mb-2">Coming Soon</h3>
+                                <p className="text-xs text-slate-500 font-light">Project baru segera hadir</p>
                             </div>
                         </div>
-                    </div>
-                    <div className="mt-20 text-center">
-                        <button className="group relative px-8 py-4 bg-transparent border border-slate-300 text-slate-900 overflow-hidden transition-all hover:border-oxide-deep">
-                            <div className="absolute inset-0 w-0 bg-oxide-deep transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-                            <span className="relative text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3 group-hover:text-white transition-colors">
-                                Muat Lebih Banyak
-                                <span className="material-symbols-outlined text-sm">expand_more</span>
-                            </span>
-                        </button>
+
+                        <div className="group relative aspect-video w-full overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 cursor-default shadow-sm transition-all duration-500 flex items-center justify-center">
+                            <div className="text-center p-8">
+                                <span className="material-symbols-outlined text-5xl text-slate-400 mb-4 block">schedule</span>
+                                <h3 className="font-serif text-xl text-slate-600 italic mb-2">Coming Soon</h3>
+                                <p className="text-xs text-slate-500 font-light">Project baru segera hadir</p>
+                            </div>
+                        </div>
+
+                        <div className="group relative aspect-video w-full overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 cursor-default shadow-sm transition-all duration-500 flex items-center justify-center">
+                            <div className="text-center p-8">
+                                <span className="material-symbols-outlined text-5xl text-slate-400 mb-4 block">schedule</span>
+                                <h3 className="font-serif text-xl text-slate-600 italic mb-2">Coming Soon</h3>
+                                <p className="text-xs text-slate-500 font-light">Project baru segera hadir</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

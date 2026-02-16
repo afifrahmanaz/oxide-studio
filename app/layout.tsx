@@ -20,6 +20,11 @@ const cormorantGaramond = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "OXIDE Studio - Solusi Digital Profesional",
   description: "Duo Kreatif Paling Asik",
+  icons: {
+    icon: "/favicon/oxide-favicon.png",
+    shortcut: "/favicon/oxide-favicon.png",
+    apple: "/favicon/oxide-favicon.png",
+  },
 };
 
 export default function RootLayout({

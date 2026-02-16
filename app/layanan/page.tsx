@@ -62,12 +62,12 @@ export default function Layanan() {
                     <div className="group py-12 border-b border-slate-200">
                         <div className="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-8 mb-8">
                             <span className="text-sm font-mono text-oxide-royal font-bold">01</span>
-                            <h3 className="font-serif text-3xl md:text-4xl text-slate-900">Pembuatan Website (Basic)</h3>
+                            <h3 className="font-serif text-3xl md:text-4xl text-slate-900">Pembuatan Landing Page Basic</h3>
                         </div>
                         <div className="grid lg:grid-cols-12 gap-10">
                             <div className="lg:col-span-8">
                                 <p className="text-slate-600 leading-relaxed font-light mb-10 text-base md:text-lg">
-                                    Fondasi Digital yang kuat untuk bisnis modern. Afif memimpin arsitektur sistem yang stabil, aman, dan berkinerja tinggi. Kami menggunakan teknologi terkini untuk memastikan aplikasi Anda siap menghadapi pertumbuhan masa depan.
+                                    Landing page profesional untuk bisnis Anda. Desain modern dengan fokus pada konversi dan performa optimal. Cocok untuk showcase produk, promosi, atau company profile sederhana.
                                 </p>
                                 <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                                     <h4 className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6 flex items-center gap-2">
@@ -76,31 +76,31 @@ export default function Layanan() {
                                     <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4">
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Web Application (React/Next.js)</span>
+                                            <span>Landing Page Responsive</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Design UI/UX Basic</span>
+                                            <span>Design Modern & Clean</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>API Integration &amp; Robust Backend System</span>
+                                            <span>Mobile Optimized</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Social Media Integration (IG, WA, TikTok)</span>
+                                            <span>Fast Loading Speed</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>E-Commerce Link Integration<br />(Shopee & Tokopedia)</span>
+                                            <span>Contact Form Integration</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>FREE Domain (1 Tahun)</span>
+                                            <span>Social Media Links</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700 col-span-1 md:col-span-2">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Konsultasi Eksklusif dengan Fullstack Developer</span>
+                                            <span>Revisi 2x</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -112,11 +112,14 @@ export default function Layanan() {
                                         <span className="inline-block py-1 px-3 bg-slate-100 text-slate-600 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6">
                                             Basic Package
                                         </span>
-                                        <div className="flex items-baseline gap-1 mb-2">
-                                            <span className="text-sm font-medium text-slate-500">Rp</span>
-                                            <span className="text-4xl font-serif font-bold text-slate-900">2.500.000</span>
+                                        <div className="flex flex-col mb-2">
+                                            <span className="text-xl font-bold text-red-500 line-through mb-1 decoration-2">Rp 1.500.000</span>
+                                            <div className="flex items-baseline gap-1">
+                                                <span className="text-sm font-medium text-slate-500">Rp</span>
+                                                <span className="text-4xl font-serif font-bold text-slate-900">800.000</span>
+                                            </div>
                                         </div>
-                                        <p className="text-xs text-slate-500 italic mb-8">Solusi tepat untuk memulai.</p>
+                                        <p className="text-xs text-slate-500 italic mb-8">Sempurna untuk memulai.</p>
                                     </div>
                                     <a href="https://wa.me/message/D456YXRE63TPJ1" target="_blank" rel="noopener noreferrer" className="w-full py-4 flex items-center justify-center gap-3 border border-slate-200 hover:border-oxide-royal hover:bg-slate-50 text-slate-900 text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-lg group/btn">
                                         Pilih Paket
@@ -130,12 +133,12 @@ export default function Layanan() {
                     <div className="group py-12 border-b border-slate-200">
                         <div className="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-8 mb-8">
                             <span className="text-sm font-mono text-oxide-royal font-bold">02</span>
-                            <h3 className="font-serif text-3xl md:text-4xl text-slate-900">Website + Desain UI/UX Advance (Premium)</h3>
+                            <h3 className="font-serif text-3xl md:text-4xl text-slate-900">Landing Page Premium + UI/UX Design</h3>
                         </div>
                         <div className="grid lg:grid-cols-12 gap-10">
                             <div className="lg:col-span-8">
                                 <p className="text-slate-600 leading-relaxed font-light mb-10 text-base md:text-lg">
-                                    Transformasi pengalaman digital melalui sentuhan desain eksklusif dari Putri (UI/UX Designer). Layanan premium ini menggabungkan kekuatan teknis dengan estetika tinggi dan interaksi yang intuitif. Kami menciptakan aplikasi yang tidak hanya berfungsi sempurna secara kode, tapi juga memanjakan mata dan memberikan kenyamanan maksimal bagi pengguna Anda.
+                                    Landing page eksklusif dengan desain UI/UX profesional yang memukau. Dilengkapi riset user experience, custom illustrations, dan animasi interaktif untuk meningkatkan engagement dan konversi bisnis Anda.
                                 </p>
                                 <div className="bg-oxide-royal/5 rounded-2xl p-6 border border-oxide-royal/10">
                                     <h4 className="text-xs font-bold uppercase tracking-widest text-oxide-royal mb-6 flex items-center gap-2">
@@ -144,47 +147,47 @@ export default function Layanan() {
                                     <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4">
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Web Application (React/Next.js)</span>
+                                            <span>UI/UX Design Professional</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Design UI/UX Advance</span>
+                                            <span>Custom Illustrations</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>API Integration &amp; Backend</span>
+                                            <span>Interactive Animations</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Bonus Chatbot AI</span>
+                                            <span>Advanced Responsive Design</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Social Media Integration<br />(IG, WA, TikTok)</span>
+                                            <span>SEO Optimization</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>E-Commerce Link Integration<br />(Shopee & Tokopedia)</span>
+                                            <span>WhatsApp Integration</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Free Domain (1 Tahun)</span>
+                                            <span>Social Media Integration</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Free Maintenance 4 Bulan Sekali</span>
+                                            <span>Google Analytics Setup</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Bebas Update Fitur</span>
+                                            <span>Performance Optimization</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Analisis Visitor Website</span>
+                                            <span>Revisi Unlimited</span>
                                         </li>
                                         <li className="flex items-start gap-3 text-sm text-slate-700 col-span-1 md:col-span-2">
                                             <span className="material-symbols-outlined text-oxide-royal text-[20px] shrink-0">check_circle</span>
-                                            <span>Konsultasi Langsung dengan Tim</span>
+                                            <span>Konsultasi dengan UI/UX Designer</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -199,11 +202,14 @@ export default function Layanan() {
                                             </span>
                                             <span className="material-symbols-outlined text-yellow-300">star</span>
                                         </div>
-                                        <div className="flex items-baseline gap-1 mb-2">
-                                            <span className="text-sm font-medium text-blue-200">Rp</span>
-                                            <span className="text-4xl font-serif font-bold text-white">4.500.000</span>
+                                        <div className="flex flex-col mb-2">
+                                            <span className="text-xl font-bold text-red-500 line-through mb-1 decoration-2">Rp 2.500.000</span>
+                                            <div className="flex items-baseline gap-1">
+                                                <span className="text-sm font-medium text-blue-200">Rp</span>
+                                                <span className="text-4xl font-serif font-bold text-white">1.800.000</span>
+                                            </div>
                                         </div>
-                                        <p className="text-xs text-blue-100 italic mb-8">Investasi terbaik untuk jangka panjang.</p>
+                                        <p className="text-xs text-blue-100 italic mb-8">Investasi terbaik untuk brand Anda.</p>
                                     </div>
                                     <a href="https://wa.me/message/D456YXRE63TPJ1" target="_blank" rel="noopener noreferrer" className="relative z-10 w-full py-4 flex items-center justify-center gap-3 bg-white text-oxide-royal hover:bg-blue-50 transition-all duration-300 rounded-lg shadow-lg text-xs font-bold uppercase tracking-widest group/btn">
                                         Pilih Premium
