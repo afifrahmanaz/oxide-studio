@@ -70,16 +70,16 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full mt-2 left-0 w-full bg-white/95 backdrop-blur-2xl border border-zinc-200/50 rounded-[2rem] overflow-hidden transition-all duration-300 ease-in-out shadow-xl ${
+        className={`md:hidden absolute top-full mt-2 left-0 w-full bg-white/95 backdrop-blur-2xl border border-zinc-200/50 rounded-[2rem] overflow-hidden transition-all duration-300 ease-in-out shadow-xl pointer-events-auto ${
           isMobileMenuOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="p-6 flex flex-col gap-4">
+        <div className="p-4 md:p-6 flex flex-col gap-3 md:gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`text-lg font-bold tracking-tight transition-colors ${
+              className={`text-base font-bold tracking-tight transition-colors ${
                 pathname === link.href
                   ? "text-black"
                   : "text-zinc-500 hover:text-black"
@@ -89,12 +89,12 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <div className="pt-4 border-t border-zinc-100">
+          <div className="pt-3 border-t border-zinc-100">
             <a
               href="https://wa.me/message/D456YXRE63TPJ1"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center py-4 bg-black text-white font-bold rounded-xl text-lg shadow-md mt-2"
+              className="block w-full text-center py-3 bg-black text-white font-bold rounded-[1rem] text-sm shadow-md mt-1"
             >
               Hubungi Kami
             </a>

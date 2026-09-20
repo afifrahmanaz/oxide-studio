@@ -72,11 +72,11 @@ export default function Home() {
 
         <div className="relative flex overflow-hidden group mt-10">
           <div 
-            className="flex gap-6 md:gap-24 pr-6 md:pr-24 w-max group-hover:[animation-play-state:paused]"
+            className="flex gap-4 md:gap-24 pr-4 md:pr-24 w-max group-hover:[animation-play-state:paused]"
             style={{ animation: 'customMarquee 90s linear infinite' }}
           >
             {[...testimonials, ...testimonials, ...testimonials].map((item, idx) => (
-              <div key={idx} className="w-[240px] md:w-[400px] h-[300px] md:h-[450px] shrink-0 rounded-[1.5rem] md:rounded-[2.5rem] relative border border-zinc-100 shadow-[0_15px_40px_rgba(0,0,0,0.04)] bg-zinc-50 flex flex-col p-6 md:p-10 transition-transform duration-300 hover:scale-[1.02] whitespace-normal">
+              <div key={idx} className="w-[200px] md:w-[400px] h-[250px] md:h-[450px] shrink-0 rounded-[1.5rem] md:rounded-[2.5rem] relative border border-zinc-100 shadow-[0_15px_40px_rgba(0,0,0,0.04)] bg-zinc-50 flex flex-col p-5 md:p-10 transition-transform duration-300 hover:scale-[1.02] whitespace-normal">
                 {/* 5 Stars */}
                 <div className="flex gap-1 mb-8">
                   {[...Array(5)].map((_, i) => (
@@ -101,27 +101,27 @@ export default function Home() {
           
           {/* Duplicate track for seamless infinite scroll */}
           <div 
-            className="flex gap-6 md:gap-24 pr-6 md:pr-24 w-max group-hover:[animation-play-state:paused]"
+            className="flex gap-4 md:gap-24 pr-4 md:pr-24 w-max group-hover:[animation-play-state:paused]"
             style={{ animation: 'customMarquee 90s linear infinite' }}
             aria-hidden="true"
           >
             {[...testimonials, ...testimonials, ...testimonials].map((item, idx) => (
-              <div key={`dup-${idx}`} className="w-[240px] md:w-[400px] h-[300px] md:h-[450px] shrink-0 rounded-[1.5rem] md:rounded-[2.5rem] relative border border-zinc-100 shadow-[0_15px_40px_rgba(0,0,0,0.04)] bg-zinc-50 flex flex-col p-6 md:p-10 transition-transform duration-300 hover:scale-[1.02] whitespace-normal">
+              <div key={`dup-${idx}`} className="w-[200px] md:w-[400px] h-[250px] md:h-[450px] shrink-0 rounded-[1.5rem] md:rounded-[2.5rem] relative border border-zinc-100 shadow-[0_15px_40px_rgba(0,0,0,0.04)] bg-zinc-50 flex flex-col p-5 md:p-10 transition-transform duration-300 hover:scale-[1.02] whitespace-normal">
                 {/* 5 Stars */}
-                <div className="flex gap-1 mb-4 md:mb-8">
+                <div className="flex gap-1 mb-3 md:mb-8">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="material-symbols-outlined text-yellow-400 text-xl md:text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                    <span key={i} className="material-symbols-outlined text-yellow-400 text-sm md:text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   ))}
                 </div>
                 
-                <span className="material-symbols-outlined text-4xl md:text-6xl text-zinc-200 mb-2 md:mb-6 absolute top-6 md:top-10 right-6 md:right-8">format_quote</span>
+                <span className="material-symbols-outlined text-3xl md:text-6xl text-zinc-200 mb-2 md:mb-6 absolute top-4 md:top-10 right-4 md:right-8">format_quote</span>
                 
-                <p className="text-sm md:text-xl font-medium text-zinc-700 leading-relaxed relative z-10 flex-1">
+                <p className="text-xs md:text-xl font-medium text-zinc-700 leading-relaxed relative z-10 flex-1">
                   {item.text}
                 </p>
                 
-                <div className="mt-auto pt-4 md:pt-6 border-t border-zinc-200/60">
-                  <p className="text-xs md:text-sm font-bold text-[#1d1d1f] uppercase tracking-widest">
+                <div className="mt-auto pt-3 md:pt-6 border-t border-zinc-200/60">
+                  <p className="text-[10px] md:text-sm font-bold text-[#1d1d1f] uppercase tracking-widest">
                     {item.author}
                   </p>
                 </div>
@@ -143,25 +143,25 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-3 md:gap-8">
             {categories.map((cat, idx) => (
               <Link
                 key={cat.slug}
                 href={`/services?category=${cat.slug}`}
-                className={`group bg-white rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-10 hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-500 flex flex-col ${
-                  idx < 2 ? "md:col-span-1 lg:col-span-3" : "md:col-span-1 lg:col-span-2"
+                className={`group bg-white rounded-[1rem] md:rounded-[2.5rem] p-4 md:p-10 hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-500 flex flex-col col-span-1 ${
+                  idx < 2 ? "lg:col-span-3" : "lg:col-span-2"
                 }`}
               >
-                <h3 className="text-xl md:text-3xl font-bold tracking-tight mb-2 md:mb-4 text-[#1d1d1f] group-hover:text-blue-600 transition-colors">
+                <h3 className="text-[14px] leading-tight md:text-3xl font-bold tracking-tight mb-2 md:mb-4 text-[#1d1d1f] group-hover:text-blue-600 transition-colors">
                   {cat.name}
                 </h3>
-                <p className="text-sm md:text-lg text-[#86868b] font-medium mb-6 md:mb-12 max-w-md">
+                <p className="text-[12px] md:text-lg text-[#86868b] font-medium mb-4 md:mb-12 max-w-md line-clamp-3 md:line-clamp-none">
                   {cat.description}
                 </p>
                 <div className="mt-auto flex items-center justify-between">
-                  <span className="font-semibold text-xs md:text-sm text-[#1d1d1f]">Lihat detail paket</span>
-                  <span className="size-8 md:size-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                    <span className="material-symbols-outlined text-[16px] md:text-[20px] text-[#1d1d1f] group-hover:text-white transition-colors">arrow_forward</span>
+                  <span className="font-semibold text-[10px] md:text-sm text-[#1d1d1f] hidden sm:block">Lihat detail</span>
+                  <span className="size-6 md:size-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined text-[14px] md:text-[20px] text-[#1d1d1f] group-hover:text-white transition-colors">arrow_forward</span>
                   </span>
                 </div>
               </Link>
