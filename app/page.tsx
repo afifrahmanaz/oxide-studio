@@ -1,268 +1,215 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { categories } from "./data/services";
+
+const testimonials = [
+  { text: '"Hasil akhirnya sangat profesional dan rapi. Penjualan kami meroket setelah proses rebranding dengan OXIDE."', author: 'CEO One Hundred Honey' },
+  { text: '"Timnya sangat responsif dan eksekusinya benar-benar memuaskan. Identitas visual kami jadi sangat kuat."', author: 'Founder Maimon' },
+  { text: '"Desainnya sangat elegan dan modern. Proses kerjanya sangat terstruktur dan cepat tanpa mengurangi kualitas."', author: 'Direktur Taman Lansia' },
+  { text: '"Infrastruktur web yang dibangun OXIDE sangat solid. Kinerja platform kami meningkat drastis dan stabil."', author: 'Founder RetailTech' },
+  { text: '"Mereka tidak sekadar membuat desain, tapi benar-benar memikirkan konversi dan bisnisnya. Agensi yang luar biasa."', author: 'CMO Group ID' },
+];
 
 export default function Home() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   return (
-    <>
-      <nav className="fixed top-0 z-50 w-full border-b border-slate-200/50 bg-white/90 backdrop-blur-xl transition-all duration-500">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-5">
-          <div className="flex items-center gap-4">
-            <div className="relative size-10 rounded-sm shadow-glow overflow-hidden">
-              <Image src="/images/uploaded_image_1.png" alt="Oxide Studio Logo" fill className="object-cover" />
-            </div>
-            <h2 className="text-sm font-semibold tracking-[0.2em] uppercase font-sans text-slate-900">Oxide Studio</h2>
+    <div className="bg-[#fbfbfd] min-h-screen text-zinc-900 font-sans selection:bg-blue-500/20">
+      <Navbar />
+
+      {/* Hero Section */}
+      <section className="pt-36 pb-20 md:pt-52 md:pb-32 text-center relative overflow-hidden">
+        {/* Very subtle background ambient light */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-blue-50 to-transparent blur-[100px] pointer-events-none" />
+        
+        <div className="container mx-auto px-6 max-w-5xl relative z-10">
+          <div className="inline-block mb-4 md:mb-6">
+            <span className="font-semibold text-xs md:text-sm tracking-widest text-zinc-400 uppercase">
+              ONE STOP SOLUTION
+            </span>
           </div>
-          <div className="hidden md:flex items-center gap-12">
-            <Link className="text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-oxide-dark transition-colors duration-300" href="/karya">Karya</Link>
-            <Link className="text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-oxide-dark transition-colors duration-300" href="/tentang">Tentang</Link>
-            <Link className="text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-oxide-dark transition-colors duration-300" href="/layanan">Layanan</Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <a href="https://wa.me/message/D456YXRE63TPJ1" target="_blank" rel="noopener noreferrer" className="hidden sm:inline-flex items-center justify-center border border-slate-300 hover:border-oxide-dark text-slate-900 hover:text-oxide-dark px-6 py-2.5 text-[10px] uppercase tracking-[0.2em] font-semibold transition-all duration-300">
-              Hubungi Kami
-            </a>
-            <button
-              className="md:hidden p-2 text-2xl text-slate-900"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+
+          <h1 className="text-4xl md:text-7xl lg:text-[88px] font-bold tracking-tighter leading-[1.05] mb-6 md:mb-8 text-[#1d1d1f]">
+            Transformasi Digital <br />
+            Kembangkan Bisnis
+          </h1>
+          <p className="text-base md:text-2xl font-medium text-[#86868b] max-w-2xl mx-auto tracking-tight mb-10 md:mb-12 px-2">
+            OXIDE Studio hadir sebagai mitra strategis untuk mempercepat transformasi digital dan memaksimalkan skala bisnis perusahaan Anda secara komprehensif.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
+            <Link
+              href="/services"
+              className="bg-black text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-semibold text-base md:text-lg hover:scale-105 transition-transform duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.1)] w-full sm:w-auto"
             >
-              <span className="material-symbols-outlined">menu</span>
-            </button>
-          </div>
-        </div>
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 p-6 shadow-lg flex flex-col gap-4 z-40">
-            <Link className="text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-oxide-dark transition-colors" href="/karya">Karya</Link>
-            <Link className="text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-oxide-dark transition-colors" href="/tentang">Tentang</Link>
-            <Link className="text-sm font-medium uppercase tracking-widest text-slate-600 hover:text-oxide-dark transition-colors" href="/layanan">Layanan</Link>
-            <a href="https://wa.me/message/D456YXRE63TPJ1" target="_blank" rel="noopener noreferrer" className="text-sm font-bold uppercase tracking-widest text-oxide-dark border-t border-slate-100 pt-4 mt-2">
-              Hubungi Kami
+              Lihat Layanan
+            </Link>
+            <a
+              href="https://wa.me/message/D456YXRE63TPJ1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black px-6 py-3 md:px-8 md:py-4 rounded-full font-semibold text-base md:text-lg hover:bg-zinc-200/50 transition-colors duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
+            >
+              Konsultasi Gratis <span className="material-symbols-outlined text-[18px] md:text-[20px]">chevron_right</span>
             </a>
           </div>
-        )}
-      </nav>
-
-      <section className="relative min-h-screen flex items-center pt-24 overflow-hidden bg-white">
-        <div className="absolute inset-0 z-0 pointer-events-none">
-          <div className="absolute right-[-10%] top-[-10%] h-[70vh] w-[70vh] bg-gradient-to-br from-blue-400/30 to-indigo-400/30 blur-[120px] rounded-full opacity-60"></div>
-          <div className="absolute left-[-10%] bottom-[-10%] h-[60vh] w-[60vh] bg-gradient-to-tr from-indigo-300/40 to-blue-300/40 blur-[100px] rounded-full opacity-40"></div>
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(29,78,216,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(29,78,216,0.03)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
         </div>
-        <div className="container mx-auto px-6 max-w-7xl relative z-10 grid lg:grid-cols-12 gap-16 lg:gap-8 items-center">
-          <div className="lg:col-span-6 flex flex-col gap-10">
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <span className="h-px w-8 bg-slate-400"></span>
-                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-                  Sinergi Digital
-                </span>
+      </section>
+
+
+
+      {/* Infinite Testimonial Marquee */}
+      <section className="py-16 md:py-24 bg-white overflow-hidden flex flex-col gap-6 md:gap-8">
+        <div className="text-center px-6">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tighter mb-3 md:mb-4 text-[#1d1d1f]">
+            Apa Kata Mereka.
+          </h2>
+          <p className="text-base md:text-lg text-zinc-500 font-medium max-w-sm mx-auto">
+            Testimoni jujur dari para klien yang telah bertumbuh bersama kami.
+          </p>
+        </div>
+
+        <div className="relative flex overflow-hidden group mt-10">
+          <div 
+            className="flex gap-8 md:gap-24 pr-8 md:pr-24 w-max group-hover:[animation-play-state:paused]"
+            style={{ animation: 'customMarquee 90s linear infinite' }}
+          >
+            {[...testimonials, ...testimonials, ...testimonials].map((item, idx) => (
+              <div key={idx} className="w-[280px] md:w-[400px] h-[360px] md:h-[450px] shrink-0 rounded-[2rem] md:rounded-[2.5rem] relative border border-zinc-100 shadow-[0_15px_40px_rgba(0,0,0,0.04)] bg-zinc-50 flex flex-col p-8 md:p-10 transition-transform duration-300 hover:scale-[1.02] whitespace-normal">
+                {/* 5 Stars */}
+                <div className="flex gap-1 mb-8">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-yellow-400 text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  ))}
+                </div>
+                
+                <span className="material-symbols-outlined text-6xl text-zinc-200 mb-6 absolute top-10 right-8">format_quote</span>
+                
+                <p className="text-lg md:text-xl font-medium text-zinc-700 leading-relaxed relative z-10 flex-1">
+                  {item.text}
+                </p>
+                
+                <div className="mt-auto pt-6 border-t border-zinc-200/60">
+                  <p className="text-sm font-bold text-[#1d1d1f] uppercase tracking-widest">
+                    {item.author}
+                  </p>
+                </div>
               </div>
-              <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-medium leading-[1] text-slate-900">
-                Logika <span className="font-light italic text-slate-400 text-5xl md:text-6xl lg:text-7xl">&amp;</span> <br />
-                <span className="text-gradient-grey italic text-slate-700">Estetika.</span>
-              </h1>
-            </div>
-            <p className="text-lg md:text-xl font-light text-slate-600 max-w-lg leading-relaxed border-l border-slate-300 pl-8">
-              <span className="font-semibold text-slate-900">OXIDE Studio</span> menghadirkan keseimbangan sempurna antara teknologi yang kokoh dan desain murni. Afif membangun struktur, Putri meniupkan nyawa ke dalamnya.
+            ))}
+          </div>
+          
+          {/* Duplicate track for seamless infinite scroll */}
+          <div 
+            className="flex gap-8 md:gap-24 pr-8 md:pr-24 w-max group-hover:[animation-play-state:paused]"
+            style={{ animation: 'customMarquee 90s linear infinite' }}
+            aria-hidden="true"
+          >
+            {[...testimonials, ...testimonials, ...testimonials].map((item, idx) => (
+              <div key={`dup-${idx}`} className="w-[280px] md:w-[400px] h-[360px] md:h-[450px] shrink-0 rounded-[2rem] md:rounded-[2.5rem] relative border border-zinc-100 shadow-[0_15px_40px_rgba(0,0,0,0.04)] bg-zinc-50 flex flex-col p-8 md:p-10 transition-transform duration-300 hover:scale-[1.02] whitespace-normal">
+                {/* 5 Stars */}
+                <div className="flex gap-1 mb-8">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-yellow-400 text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  ))}
+                </div>
+                
+                <span className="material-symbols-outlined text-5xl md:text-6xl text-zinc-200 mb-4 md:mb-6 absolute top-8 md:top-10 right-6 md:right-8">format_quote</span>
+                
+                <p className="text-base md:text-xl font-medium text-zinc-700 leading-relaxed relative z-10 flex-1">
+                  {item.text}
+                </p>
+                
+                <div className="mt-auto pt-6 border-t border-zinc-200/60">
+                  <p className="text-sm font-bold text-[#1d1d1f] uppercase tracking-widest">
+                    {item.author}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bento Box Services */}
+      <section className="py-20 md:py-32 bg-[#fbfbfd]">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-12 md:mb-20">
+            <h2 className="text-3xl md:text-6xl font-bold tracking-tighter mb-4 md:mb-6">
+              Keahlian Inti Kami.
+            </h2>
+            <p className="text-base md:text-xl text-zinc-500 font-medium max-w-2xl mx-auto">
+              Infrastruktur bisnis yang esensial, dikemas dalam layanan premium.
             </p>
-            <div className="flex flex-wrap items-center gap-8 pt-4">
-              <Link href="/karya" className="group relative px-8 py-4 bg-oxide-dark text-white overflow-hidden transition-all hover:shadow-lg shadow-glow">
-                <div className="absolute inset-0 w-0 bg-blue-900 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-                <span className="relative text-xs font-bold uppercase tracking-widest flex items-center gap-3">
-                  Lihat Karya Pilihan
-                  <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                </span>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6">
+            {categories.map((cat, idx) => (
+              <Link
+                key={cat.slug}
+                href={`/services?category=${cat.slug}`}
+                className={`group bg-white rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-10 hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] transition-all duration-500 flex flex-col ${
+                  idx < 2 ? "md:col-span-1 lg:col-span-3" : "md:col-span-1 lg:col-span-2"
+                }`}
+              >
+                <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-3 md:mb-4 text-[#1d1d1f] group-hover:text-blue-600 transition-colors">
+                  {cat.name}
+                </h3>
+                <p className="text-base md:text-lg text-[#86868b] font-medium mb-8 md:mb-12 max-w-md">
+                  {cat.description}
+                </p>
+                <div className="mt-auto flex items-center justify-between">
+                  <span className="font-semibold text-sm text-[#1d1d1f]">Lihat detail paket</span>
+                  <span className="size-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined text-[20px] text-[#1d1d1f] group-hover:text-white transition-colors">arrow_forward</span>
+                  </span>
+                </div>
               </Link>
-            </div>
-          </div>
-          <div className="lg:col-span-6 flex flex-col sm:flex-row gap-8 justify-center lg:justify-end items-center relative perspective-1000">
-            <div tabIndex={0} className="group relative w-full sm:w-72 aspect-[4/5] overflow-hidden bg-white shadow-premium transition-all duration-700 hover:-translate-y-2 border border-slate-200 hover:border-slate-400 focus:border-slate-400 focus:outline-none">
-              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 group-focus:scale-110 grayscale" style={{ backgroundImage: "url('/images/AFIF RAHMAN baru.jpg')" }}></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90 group-hover:opacity-70 group-focus:opacity-70 transition-opacity duration-500"></div>
-              <div className="absolute bottom-0 left-0 w-full p-8 text-white z-20">
-                <div className="translate-y-4 group-hover:translate-y-0 group-focus:translate-y-0 transition-transform duration-500">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-2 text-blue-300">Direktur Teknologi</p>
-                  <h3 className="font-serif text-3xl italic mb-1">Afif Rahman</h3>
-                  <div className="h-px w-12 bg-white/30 mt-4 group-hover:w-full group-hover:bg-white group-focus:w-full group-focus:bg-white transition-all duration-700"></div>
-                  <p className="mt-4 text-xs font-light text-white opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-700 delay-100 leading-relaxed">
-                    Arsitek sistem yang menerjemahkan kompleksitas menjadi kode yang efisien dan skalabel.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div tabIndex={0} className="group relative w-full sm:w-72 aspect-[4/5] overflow-hidden bg-white shadow-premium transition-all duration-700 hover:-translate-y-2 sm:mt-24 border border-slate-200 hover:border-slate-400 focus:border-slate-400 focus:outline-none">
-              <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 group-focus:scale-110 grayscale" style={{ backgroundImage: "url('/images/PUTRI.jpg')" }}></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90 group-hover:opacity-70 group-focus:opacity-70 transition-opacity duration-500"></div>
-              <div className="absolute bottom-0 left-0 w-full p-8 text-white z-20">
-                <div className="translate-y-4 group-hover:translate-y-0 group-focus:translate-y-0 transition-transform duration-500">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] mb-2 text-blue-300">Direktur Kreatif</p>
-                  <h3 className="font-serif text-3xl italic mb-1">Putri Maharani</h3>
-                  <div className="h-px w-12 bg-white/30 mt-4 group-hover:w-full group-hover:bg-white group-focus:w-full group-focus:bg-white transition-all duration-700"></div>
-                  <p className="mt-4 text-xs font-light text-white opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-700 delay-100 leading-relaxed">
-                    Penata visual yang mengubah konsep abstrak menjadi pengalaman pengguna yang imersif.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="py-32 bg-slate-50 relative border-t border-slate-200">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-24 mb-20 items-end">
-            <div className="lg:col-span-5">
-              <h2 className="font-serif text-4xl md:text-5xl text-slate-900 mb-6">Kompetensi Utama</h2>
-              <p className="text-slate-500 font-light leading-relaxed text-lg">
-                Kami memberikan rangkaian layanan digital yang komprehensif. Dari baris kode pertama hingga piksel terakhir, presisi adalah standar kami.
-              </p>
-            </div>
-            <div className="lg:col-span-7 flex pb-2 border-b border-slate-300">
-              <p className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-auto">Keahlian Kami</p>
-            </div>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="group bg-white p-8 border border-slate-200 hover:border-slate-400 transition-all duration-500 hover:shadow-lg">
-              <div className="size-12 mb-8 flex items-center justify-center bg-slate-50 border border-slate-200 shadow-sm group-hover:bg-oxide-dark group-hover:text-white transition-all duration-500">
-                <span className="material-symbols-outlined text-slate-400 group-hover:text-white transition-colors text-xl">code</span>
-              </div>
-              <h3 className="font-serif text-2xl text-slate-900 mb-4 group-hover:translate-x-1 transition-transform">Arsitektur Web</h3>
-              <p className="text-sm text-slate-500 font-light leading-relaxed mb-8">
-                Mengembangkan aplikasi web yang skalabel dan berkinerja tinggi menggunakan kerangka kerja modern serta logika backend yang kuat.
-              </p>
-              <div className="border-t border-slate-100 pt-6">
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3 text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-800 transition-colors">
-                    <span className="w-1.5 h-1.5 bg-slate-400 group-hover:bg-oxide-dark rounded-full transition-colors"></span> React / Next.js
-                  </li>
-                  <li className="flex items-center gap-3 text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-800 transition-colors">
-                    <span className="w-1.5 h-1.5 bg-slate-400 group-hover:bg-oxide-dark rounded-full transition-colors"></span> Python / Node
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="group bg-white p-8 border border-slate-200 hover:border-slate-400 transition-all duration-500 hover:shadow-lg">
-              <div className="size-12 mb-8 flex items-center justify-center bg-slate-50 border border-slate-200 shadow-sm group-hover:bg-oxide-dark group-hover:text-white transition-all duration-500">
-                <span className="material-symbols-outlined text-slate-400 group-hover:text-white transition-colors text-xl">palette</span>
-              </div>
-              <h3 className="font-serif text-2xl text-slate-900 mb-4 group-hover:translate-x-1 transition-transform">Sistem Visual</h3>
-              <p className="text-sm text-slate-500 font-light leading-relaxed mb-8">
-                Menciptakan identitas merek yang kohesif dan antarmuka pengguna yang mengomunikasikan nilai melalui presisi estetika.
-              </p>
-              <div className="border-t border-slate-100 pt-6">
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3 text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-800 transition-colors">
-                    <span className="w-1.5 h-1.5 bg-slate-400 group-hover:bg-oxide-dark rounded-full transition-colors"></span> Desain UI/UX
-                  </li>
-                  <li className="flex items-center gap-3 text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-800 transition-colors">
-                    <span className="w-1.5 h-1.5 bg-slate-400 group-hover:bg-oxide-dark rounded-full transition-colors"></span> Strategi Branding
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="group bg-white p-8 border border-slate-200 hover:border-slate-400 transition-all duration-500 hover:shadow-lg">
-              <div className="size-12 mb-8 flex items-center justify-center bg-slate-50 border border-slate-200 shadow-sm group-hover:bg-oxide-dark group-hover:text-white transition-all duration-500">
-                <span className="material-symbols-outlined text-slate-400 group-hover:text-white transition-colors text-xl">auto_graph</span>
-              </div>
-              <h3 className="font-serif text-2xl text-slate-900 mb-4 group-hover:translate-x-1 transition-transform">Strategi Produk</h3>
-              <p className="text-sm text-slate-500 font-light leading-relaxed mb-8">
-                Menyelaraskan tujuan bisnis dengan kebutuhan pengguna untuk membangun produk digital yang tidak hanya fungsional, tetapi esensial.
-              </p>
-              <div className="border-t border-slate-100 pt-6">
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3 text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-800 transition-colors">
-                    <span className="w-1.5 h-1.5 bg-slate-400 group-hover:bg-oxide-dark rounded-full transition-colors"></span> Analisis Pasar
-                  </li>
-                  <li className="flex items-center gap-3 text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-800 transition-colors">
-                    <span className="w-1.5 h-1.5 bg-slate-400 group-hover:bg-oxide-dark rounded-full transition-colors"></span> Roadmap Skala
-                  </li>
-                </ul>
-              </div>
-            </div>
+
+      {/* Simple Big CTA */}
+      <section className="py-24 md:py-40 bg-white text-center">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <h2 className="text-4xl md:text-7xl font-bold tracking-tighter mb-8 md:mb-10">
+            Mulai Proyek Anda Hari Ini.
+          </h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
+            <a
+              href="https://wa.me/message/D456YXRE63TPJ1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-8 py-4 md:px-10 md:py-5 rounded-full font-bold text-lg md:text-xl hover:bg-blue-700 hover:scale-105 transition-all duration-300 shadow-xl shadow-blue-600/20 w-full sm:w-auto"
+            >
+              Hubungi Spesialis Kami
+            </a>
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="mb-16">
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Kemitraan</span>
-            <h2 className="font-serif text-4xl mt-4 text-slate-900">Kekuatan Saling Melengkapi</h2>
-          </div>
-          <div className="space-y-0">
-            <div className="group flex flex-col md:flex-row items-start md:items-center justify-between py-12 border-t border-slate-200 hover:bg-slate-50 transition-colors cursor-default px-4 -mx-4 rounded-sm">
-              <div className="flex items-baseline gap-8 md:w-1/3">
-                <span className="text-xs font-mono text-slate-400 group-hover:text-black transition-colors">01</span>
-                <h3 className="text-3xl font-serif text-slate-900 group-hover:translate-x-4 transition-transform duration-500">Afif Rahman</h3>
-              </div>
-              <div className="mt-4 md:mt-0 md:w-1/3">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Fullstack Developer</p>
-              </div>
-              <div className="mt-4 md:mt-0 md:w-1/3 text-right hidden md:block opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform translate-x-4 group-hover:translate-x-0">
-                <span className="text-lg font-serif italic text-slate-600 hidden md:block">"Arsitektur adalah musik yang membeku."</span>
-              </div>
-            </div>
-            <div className="group flex flex-col md:flex-row items-start md:items-center justify-between py-12 border-t border-b border-slate-200 hover:bg-slate-50 transition-colors cursor-default px-4 -mx-4 rounded-sm">
-              <div className="flex items-baseline gap-8 md:w-1/3">
-                <span className="text-xs font-mono text-slate-400 group-hover:text-black transition-colors">02</span>
-                <h3 className="text-3xl font-serif text-slate-900 group-hover:translate-x-4 transition-transform duration-500">Putri Maharani Siregar</h3>
-              </div>
-              <div className="mt-4 md:mt-0 md:w-1/3">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Designer UI/UX</p>
-              </div>
-              <div className="mt-4 md:mt-0 md:w-1/3 text-right hidden md:block opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform translate-x-4 group-hover:translate-x-0">
-                <span className="text-lg font-serif italic text-slate-600 hidden md:block">"Kesederhanaan adalah puncak kecanggihan."</span>
-              </div>
-            </div>
+      {/* Official Registration Banner */}
+      <section className="py-12 md:py-20 bg-white border-t border-zinc-100">
+        <div className="container mx-auto px-6">
+          <h2 className="text-center text-xl md:text-3xl font-bold tracking-tight mb-8 md:mb-12 text-[#1d1d1f]">
+            Resmi Terdaftar Di
+          </h2>
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-20 transition-opacity duration-500">
+            {/* AHU */}
+            <img src="/resmiterdaftar/Logo%20Ahu.jpg" alt="AHU" className="h-8 md:h-20 object-contain mix-blend-multiply" />
+            
+            {/* OSS */}
+            <img src="/resmiterdaftar/oss-id.png" alt="OSS" className="h-8 md:h-20 object-contain mix-blend-multiply" />
+            
+            {/* DJP */}
+            <img src="/resmiterdaftar/Direktoran%20Jenderal%20Pajak%20(DJP)%20Secondary%20Logo.png" alt="DJP" className="h-8 md:h-20 object-contain mix-blend-multiply" />
           </div>
         </div>
       </section>
 
-      <footer className="bg-oxide-dark text-white pt-24 pb-12 border-t border-white/10">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-            <div className="col-span-1 lg:col-span-2">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="relative size-8 rounded-sm overflow-hidden">
-                  <Image src="/images/uploaded_image_1.png" alt="Oxide Studio Logo" fill className="object-cover" />
-                </div>
-                <span className="text-sm font-semibold tracking-[0.2em] uppercase">Oxide Studio</span>
-              </div>
-              <p className="text-blue-100 font-light max-w-sm leading-relaxed text-sm">
-                Partner kreatif untuk visi digital Anda. Kami memadukan teknologi robust dan desain estetik untuk dampak maksimal.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-xs font-bold uppercase tracking-widest text-blue-300 mb-6">Menu</h4>
-              <ul className="space-y-4">
-                <li><Link className="text-sm text-white hover:text-blue-200 transition-colors" href="/karya">Karya Pilihan</Link></li>
-                <li><Link className="text-sm text-white hover:text-blue-200 transition-colors" href="/tentang">Tentang Kami</Link></li>
-                <li><Link className="text-sm text-white hover:text-blue-200 transition-colors" href="/layanan">Layanan</Link></li>
-                <li><a className="text-sm text-white hover:text-blue-200 transition-colors" href="https://wa.me/message/D456YXRE63TPJ1" target="_blank" rel="noopener noreferrer">Kontak</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-xs font-bold uppercase tracking-widest text-blue-300 mb-6">Sosial</h4>
-              <ul className="space-y-4">
-                <li><a className="text-sm text-white hover:text-blue-200 transition-colors" href="https://www.instagram.com/oxidestudio.id?igsh=cDB6MTF6YzBpNmph" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a className="text-sm text-white hover:text-blue-200 transition-colors" href="https://wa.me/message/D456YXRE63TPJ1" target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-[10px] text-blue-200 uppercase tracking-widest">© 2025 Oxide Studio. Pangkalpinang, Indonesia.</p>
-            <div className="flex gap-6">
-              <a className="text-[10px] text-blue-200 hover:text-white uppercase tracking-widest transition-colors" href="#">Privacy Policy</a>
-              <a className="text-[10px] text-blue-200 hover:text-white uppercase tracking-widest transition-colors" href="#">Terms of Service</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </>
+      <Footer />
+    </div>
   );
 }

@@ -12,7 +12,7 @@
   --color-surface-darker: #020617;
   --color-charcoal: #18181b;
 
-  --font-serif: var(--font-cormorant-garamond), serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
   --font-sans: var(--font-plus-jakarta-sans), sans-serif;
 
   --shadow-premium: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
@@ -29,6 +29,7 @@
   --animate-float-slow: float 6s ease-in-out infinite;
   --animate-float-medium: float 4s ease-in-out infinite;
   --animate-spin-slow: spin 12s linear infinite;
+  --animate-marquee: marquee 40s linear infinite;
 
   @keyframes shine {
     to {
@@ -51,6 +52,15 @@
 
 @utility smooth-transition {
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes customMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @utility text-gradient-grey {

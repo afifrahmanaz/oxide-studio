@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Cormorant_Garamond } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import AskOxide from "./components/AskOxide";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -9,17 +10,11 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const cormorantGaramond = Cormorant_Garamond({
-  subsets: ["latin"],
-  variable: "--font-cormorant-garamond",
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
-  title: "OXIDE Studio - Solusi Digital Profesional",
-  description: "Duo Kreatif Paling Asik",
+  title: "Solusi Digital Oxide",
+  description:
+    "Ekosistem eksekusi bisnis terpadu dengan standar premium.",
   icons: {
     icon: "/favicon/oxide-favicon.png",
     shortcut: "/favicon/oxide-favicon.png",
@@ -33,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className="light scroll-smooth">
+    <html lang="id" className="scroll-smooth">
       <head>
         <link
           rel="stylesheet"
@@ -41,9 +36,10 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${plusJakarta.variable} ${cormorantGaramond.variable} bg-white text-slate-800 font-sans overflow-x-hidden selection:bg-blue-500 selection:text-white`}
+        className={`${plusJakarta.variable} bg-[#fbfbfd] text-zinc-900 font-sans overflow-x-hidden selection:bg-blue-500/20 selection:text-blue-900`}
       >
         {children}
+        <AskOxide />
       </body>
     </html>
   );
